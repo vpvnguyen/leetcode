@@ -1,22 +1,21 @@
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
+// jimmy
 
-var nums = [3, 2, 4];
+// declare a function called twosum
 
-var target = 6;
+const twoSum = (array, number) => {
+    // return an array
+    // filter out numbers > target
+    const shortList = array.filter(value => value < number);
 
-var twoSum = function(nums, target) {
-
-    for (var i = 0; i < nums.length; i++) {
-        for (var j = 0; j < nums.length; j++) {
-            if (nums[i] + nums[j] === target && nums[i] !== nums[j]) {
-                return [i, j]
-            }
-        }
-    }
+    return shortList.reduce((acc, curr, index, array) => {
+        // use acc to track current index
+        // acc = 0
+        // curr = array[0]
+        return acc;
+    }, [0, 1]);
 };
 
-twoSum(nums, target);
+const array = [12, 2, 5, 8];
+const target = 10;
+
+console.log(twoSum(array, target))
