@@ -22,6 +22,17 @@
  * @param {number} x
  * @return {boolean}
  */
+
+
+const x = 121;
+const y = -121;
+const z = 10;
+
+// input y and z currently does not work with this solution
 var isPalindrome = function(x) {
-    
+    const numToStr = x.toString().split('').reverse().join('');
+    const strToNum = Number(numToStr);
+    return strToNum;
 };
+
+console.log(isPalindrome(z));
