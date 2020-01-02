@@ -23,6 +23,8 @@ const input = 123
 const input2 = -123
 const input3 = 120
 
+
+// current solution does not work with input2
 const reverse = input => {
     const inputToString = input.toString()
     const reverseArray = inputToString.split('').reverse().join('');
