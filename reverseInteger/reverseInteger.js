@@ -19,29 +19,31 @@
 //  * @param {number} x
 //  * @return {number}
 //  */
-const input = 123
-const input2 = -123
-const input3 = 120
-
+const input = 123;
+const input2 = -123;
+const input3 = 120;
 
 // current solution does not work with input2
 const reverse = input => {
-    // get absolute value of input and convert to string
-    const absNum = Math.abs(input)
-    console.log(`abs: ${absNum}`)
-    // convert absNum to string, split, reverse, join
-    const reverseStr = absNum.toString().split('').reverse().join('')
-    console.log(`reverseStr: ${reverseStr}`)
-    // convert reversed string back to a number
-    const reverseNum = Number(reverseStr);
-    console.log(`reverseNum: ${reverseNum}`)
-    // multiply reversedNum with the original input sign value
-    const signNum = reverseNum * Math.sign(input)
-    console.log(`signNum: ${signNum}`)
-    
-    return signNum
+  // get absolute value of input and convert to string
+  const absNum = Math.abs(input);
+
+  // convert absNum to string, split, reverse, join
+  const reverseStr = absNum
+    .toString()
+    .split("")
+    .reverse()
+    .join("");
+
+  // convert reversed string back to a number
+  const reverseNum = Number(reverseStr);
+
+  // multiply reversedNum with the original input sign value
+  const signNum = reverseNum * Math.sign(input);
+
+  return signNum;
 };
 
-console.log(reverse(input))
-console.log(reverse(input2))
-console.log(reverse(input3))
+console.log(reverse(input));
+console.log(reverse(input2));
+console.log(reverse(input3));
