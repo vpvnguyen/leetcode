@@ -23,7 +23,6 @@ const input = 123;
 const input2 = -123;
 const input3 = 120;
 
-// current solution does not work with input2
 const reverse = input => {
   // get absolute value of input and convert to string
   const absNum = Math.abs(input);
