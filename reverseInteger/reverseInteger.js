@@ -26,10 +26,22 @@ const input3 = 120
 
 // current solution does not work with input2
 const reverse = input => {
-    const inputToString = input.toString()
-    const reverseArray = inputToString.split('').reverse().join('');
-    const result = Number(reverseArray);
-    console.log(typeof result)
+    // get absolute value of input and convert to string
+    const absNum = Math.abs(input)
+    console.log(`abs: ${absNum}`)
+    // convert absNum to string, split, reverse, join
+    const reverseStr = absNum.toString().split('').reverse().join('')
+    console.log(`reverseStr: ${reverseStr}`)
+    // convert reversed string back to a number
+    const reverseNum = Number(reverseStr);
+    console.log(`reverseNum: ${reverseNum}`)
+    // multiply reversedNum with the original input sign value
+    const signNum = reverseNum * Math.sign(input)
+    console.log(`signNum: ${signNum}`)
+    
+    return signNum
 };
 
-reverse(input)
+console.log(reverse(input))
+console.log(reverse(input2))
+console.log(reverse(input3))
