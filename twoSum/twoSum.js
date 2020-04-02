@@ -30,22 +30,21 @@
 
 // console.log(twoSum(nums, target));
 
-
 const array = [3, 3, 1, 3];
 const target = 6;
 
 // i = 0, j = 1
 const twoSum = (array, target) => {
-    for (let i = 0; i < array.length; i++) {
-        for (let j = i + 1; j < array.length; j++) {
-            if (array[i] + array[j] === target) {
-                return [i, j];
-            }
-        }
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] + array[j] === target) {
+        return [i, j];
+      }
     }
+  }
 
-    return 'fuck off';
-}
+  return "no match";
+};
 
 // Array.map()
 // Array.filter()
