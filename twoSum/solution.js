@@ -17,14 +17,15 @@
  * @return {number[]}
  */
 
-const input = [2, 7, 11, 15];
+const input = [0, 1, 2, 7, 11, 15];
 const target = 9;
 const twoSum = (nums, target) => {
   const previousValues = {};
   for (let i = 0; i < nums.length; i++) {
-    const currentNumber = nums[i];
-    const neededValue = target - currentNumber;
-    const index2 = previousValues[neededValue];
+    const currentNumber = nums[i]; // 2
+    const neededValue = target - currentNumber; // 9 - 2 = 7
+    const index2 = previousValues[neededValue]; // 7
+    console.log(previousValues);
     if (index2 != null) {
       return [index2, i];
     } else {
