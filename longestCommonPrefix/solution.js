@@ -26,8 +26,10 @@
 // All given inputs are in lowercase letters a-z.
 
 function longest_common_starting_substring(arr1) {
+  // concat array together and sort alphabetically
   const arr = arr1.concat().sort();
   console.log(`arr: ${arr}`);
+
   const a1 = arr[0];
   const a2 = arr[arr.length - 1];
   const L = a1.length;
