@@ -8,7 +8,7 @@ function funWithAnagrams(text) {
     return string.split("").sort().join("");
   };
 
-  // Sort the strings in the array
+  // Sort the strings in the array and return a new array
   const sortedStringsInArray = text.map((value) => {
     return sortString(value);
   });
