@@ -14,8 +14,8 @@ const text = ["code", "doce", "ecod", "framer", "frame"];
 
 ### Output
 
-```javascript
-["code", "frame", "framer"];
+```
+["code", "frame", "framer"]
 ```
 
 - 'code' and 'doce' are anagrams. Remove 'doce' from the array and keep the first occurrence code in the array.
@@ -39,8 +39,8 @@ const text = ["code", "doce", "ecod", "framer", "frame", "remarf"];
 
 ### Output
 
-```javascript
-["code", "framer"];
+```
+["code", "framer"]
 ```
 
 - 'code' and 'doce' are anagrams. Remove 'doce' from the array and keep the first occurrence code in the array.
