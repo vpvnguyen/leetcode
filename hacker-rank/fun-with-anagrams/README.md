@@ -25,10 +25,12 @@ Return an array of the first instance of each anagram that is sorted in ascendin
 
 ## Example
 
-Input
+### Input
+
 text = ["code", "doce", "ecod", "framer", "frame", "remarf"]
 
-Output
+### Output
+
 ['code','framer']
 
 - 'code' and 'doce' are anagrams. Remove 'doce' from the array and keep the first occurrence code in the array.
