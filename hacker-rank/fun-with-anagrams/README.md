@@ -6,7 +6,11 @@ Given an array of strings, remove each string that is an anagram of an earlier s
 
 ## Example
 
+Input
 text = ['code', 'doce', 'ecod', 'framer', 'frame']
+
+Output
+['code','frame','framer']
 
 - 'code' and 'doce' are anagrams. Remove 'doce' from the array and keep the first occurrence code in the array.
 - 'code' and 'ecod' are anagrams. Remove 'ecod' from the array and keep the first occurrence code in the array.
@@ -21,7 +25,11 @@ Return an array of the first instance of each anagram that is sorted in ascendin
 
 ## Example
 
+Input
 text = ["code", "doce", "ecod", "framer", "frame", "remarf"]
+
+Output
+['code','framer']
 
 - 'code' and 'doce' are anagrams. Remove 'doce' from the array and keep the first occurrence code in the array.
 - 'code' and 'ecod' are anagrams. Remove 'ecod' from the array and keep the first occurrence code in the array.
