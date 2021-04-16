@@ -54,9 +54,7 @@ const funWithAnagrams2 = (text) => {
 
   // Iterate through the strings from the given array
   // and return a new array of alphabetically sorted strings
-  const sortString = (string) => {
-    return string.split("").sort().join("");
-  };
+  const sortString = (string) => string.split("").sort().join("");
 
   // Iterate through each string from the given array
   // For each string, sort the string alphabetically
