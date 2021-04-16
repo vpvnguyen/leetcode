@@ -88,7 +88,9 @@ const funWithAnagrams2 = (text) => {
     if (count > 1) answers.push(firstElement);
   });
 
-  return answers;
+  const sortedAnswers = answers.sort();
+
+  return sortedAnswers;
 };
 
 // Input
