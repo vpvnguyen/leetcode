@@ -55,5 +55,27 @@ const solve2 = (n, ar) => {
   return console.log(pairs);
 };
 
+const solve3 = (n, ar) => {
+  const map = {};
+
+  // reject if ar length > n
+  if (ar.length !== n) return console.log(`${ar.length} !== ${n}`);
+
+  // create a map with matching items
+  const matched = { pairs: 0 };
+
+  // iterate through array and count matching elements to map
+  ar.forEach((item) => {
+    if (map[item]) map[item].count += 1;
+
+    if (!map[item])
+      map[item] = {
+        count: 1,
+      };
+  });
+
+  // Object.keys()
+};
+
 solve(n, ar);
 solve2(n, ar);
