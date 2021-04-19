@@ -23,6 +23,7 @@ const filterJob = (string, filterChar) => {
   const lowerCasedStrings = setAllStringsToLowerCase(stringsToLowerCase);
   const [lowerCasedString, lowerCasedChar] = lowerCasedStrings;
 
+  // check if strings matches
   if (lowerCasedString === lowerCasedChar) return true;
   return false;
 };
