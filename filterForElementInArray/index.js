@@ -13,7 +13,7 @@ const getFirstCharOfString = (string) => string.split("")[0];
 const setAllStringsToLowerCase = (stringArray) =>
   stringArray.map((string) => string.toLowerCase());
 
-const filterJob = (string, filterChar) => {
+const filterByString = (string, filterChar) => {
   // get fist character of string
   const firstCharOfString = getFirstCharOfString(string);
 
@@ -30,7 +30,7 @@ const filterJob = (string, filterChar) => {
 
 // log all items that matches filter
 array.forEach((item) => {
-  const filteredJob = filterJob(item.job, "E");
+  const filteredJob = filterByString(item.job, "E");
 
   if (filteredJob) console.log(item);
 });
