@@ -8,17 +8,26 @@ const array = [
 
 const jobChar = "E";
 
-const getFirstLowerCaseCharOfString = (string) =>
-  string.split("")[0].toLowerCase();
+const getFirstCharOfString = (string) => string.split("")[0];
 
-const filterJob = (string, char) => {
-  const firstCharInString = getFirstLowerCaseCharOfString(string);
-  const lowerCaseChar = char.toLowerCase();
+const setAllStringsToLowerCase = (stringArray) =>
+  stringArray.map((string) => string.toLowerCase());
 
-  if (firstCharInString === lowerCaseChar) return true;
+const filterJob = (string, filterChar) => {
+  // get fist character of string
+  const firstCharOfString = getFirstCharOfString(string);
+
+  // lower case all string parameters
+  const stringsToLowerCase = [firstCharOfString, filterChar];
+
+  const lowerCasedStrings = setAllStringsToLowerCase(stringsToLowerCase);
+  const [lowerCasedString, lowerCasedChar] = lowerCasedStrings;
+
+  if (lowerCasedString === lowerCasedChar) return true;
   return false;
 };
 
+// log all items that matches filter
 array.forEach((item) => {
   const filteredJob = filterJob(item.job, "E");
 
