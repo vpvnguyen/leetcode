@@ -8,8 +8,11 @@ const array = [
 
 const jobChar = "E";
 
+const getFirstLowerCaseCharOfString = (string) =>
+  string.split("")[0].toLowerCase();
+
 const filterJob = (string, char) => {
-  const firstCharInString = string.split("")[0].toLowerCase();
+  const firstCharInString = getFirstLowerCaseCharOfString(string);
   const lowerCaseChar = char.toLowerCase();
 
   if (firstCharInString === lowerCaseChar) return true;
